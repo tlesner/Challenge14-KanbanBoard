@@ -13,10 +13,10 @@
     "client:build": "cd client && npm run build",
     "client:dev": "cd client && npm run dev",
     "build:server": "cd server && npm run build",
-    "build": "cd client && npm run build",
+    "build": "concurrently \"cd server && npm run build\" \"cd client && npm run build\"",
     "seed": "cd server && npm run seed",
-    "render-build": "npm install && npm run build && npm run server"
-  },
+    "render-build": "npm install && npm run build"  },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",

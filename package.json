@@ -15,7 +15,8 @@
     "build:server": "cd server && npm run build",
     "build": "concurrently \"cd server && npm run build\" \"cd client && npm run build\"",
     "seed": "cd server && npm run seed",
-    "render-build": "npm install && npm run build"  },
+    "render-build": "npm install && npm run build"  
+  },
   
   "keywords": [],
   "author": "",

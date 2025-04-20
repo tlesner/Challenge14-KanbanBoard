@@ -1,9 +1,9 @@
 # KanbanBoard
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MPL 2.0](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MPL-2.0)
 
 ## Description
-This is a command-line application that manages an employee database for a company. Users are able to add, remove, and update employees, roles, and departments for the company. It utilizes Node.js, Inquierer and PostgreSQL.
+This full-stack PERM application functions as a visual project management tool using a Kanban board layout. It leverages JSON Web Tokens for secure user authentication, allowing users to log in and manage project tickets organized into three columns: To Do, In Progress, and Completed. Users can create new tickets, update existing ones, or remove tickets. The app is deployed via Render and built using PostgreSQL for the database, with a tech stack that includes Express.js, ReactJS, and Node.js.
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -18,25 +18,24 @@ This is a command-line application that manages an employee database for a compa
 To install the application locally, do the following in your terminal:
 
 1. Clone the repository to your local computer.  
-   `git clone git@github.com:lwebert/Challenge-10-EmployeeTracker.git`
+   `git clone git@github.com:tlesner/Challenge14-KanbanBoard.git`
 2. Check that node.js is installed.  
    `node -v`
 3. Install dependencies.  
    `npm i`
 
 ## Usage
-To run the application, open 2 instances of the application in your terminal. 
+The full application is deployed [here](https://challenge14-kanbanboard.onrender.com/)
 
-Run the following in the first terminal:
-1. Log into postgreSQL. `psql -U postgres`
-2. Run `\i src/db/schema.sql;` to create your database and tables.
-3. Run `\i src/db/seeds.sql;` to insert initial employees, roles, and departments into the tables.
-
-Run the following in the second terminal:
-1. Initialize your applicaiton. `npm run start`
+To run the application locally, open an instance of the application in your terminal. 
+Run the following:
+1. `npm run build`.
+2. `npm run seed`.
+3. `npm run start`. 
+4. Your application should open automatically. If it does not, it can be reached at http://localhost:3000/.
 
 ## Contributing
-This application was developed by Lauren Webert. Here are some guidelines on ways to contribute:
+This application was developed by Thomas Lesner. Here are some guidelines on ways to contribute:
 
 Report a bug fix.
 
@@ -53,8 +52,9 @@ Make local changes to push up.
 The application is working correctly if all command-line options do what they are meant to without throwing an exception.
 
 ## License
-The application is covered under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt).   
-https://www.apache.org/licenses/LICENSE-2.0.txt
+The application is covered under [MIT License](https://mit-license.org/#:~:text=The%20MIT%20License%20(MIT)&text=Permission%20is%20hereby%20granted%2C%20free,OTHER%20DEALINGS%20IN%20THE%20SOFTWARE.).  
+
+
 
 
 ## Questions
